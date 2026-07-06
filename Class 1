@@ -1,0 +1,37 @@
+# 🚀 Class 1: Python AI & Development Setup
+
+**Course:** Agentic AI 3.0
+**Instructor:** Mayank Aggarwal
+**Topics Covered:** Environment Setup, `uv` Package/Project Manager, Virtual Environments, Core Python, and API Integrations.
+
+---
+
+## 📌 Overview
+This foundational session focuses on transitioning from traditional data science setups (like Jupyter Notebooks and Anaconda) to a robust, industry-standard software engineering environment tailored for building AI applications. The primary goal is to establish reproducibility, proper environment isolation, and token-efficient coding practices.
+
+---
+
+## 🛠️ Development Environment Setup
+
+To build production-ready AI agents, an enterprise-grade setup is required. 
+
+*   **IDE:** **Visual Studio Code (VS Code)** is the industry standard and the required IDE for this bootcamp. 
+    *   *Note:* Avoid Jupyter Notebooks for AI development. Using AI-assisted coding tools (like Claude Code or Cursor) inside notebooks results in a massive waste of API tokens.
+*   **Terminal Mastery:** Real development happens in the terminal.
+    *   **Mac/Linux:** Use the native Unix-based terminal.
+    *   **Windows:** Standard `cmd` and `PowerShell` often fail with advanced development scripts. Windows users must install and use **Git Bash** or **Windows Terminal** to properly execute Linux-based commands, mimicking real-world cloud deployments.
+*   **Python Version:** Python **3.10 or higher** is strictly required.
+
+---
+
+## ⚡ Package & Project Management with `uv`
+
+Legacy tools like `pip`, `venv`, and `conda` are discouraged in favor of **`uv`**, a blazing-fast project and package manager built in Rust (10x-200x faster than traditional tools).
+
+### 1. Initializing a Project
+Instead of managing global packages, `uv` allows you to initialize contained projects.
+
+```bash
+# Initialize a new uv project
+uv init my_first_project
+cd my_first_project
